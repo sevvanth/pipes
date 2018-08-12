@@ -1,0 +1,10 @@
+<p>
+  first works!
+</p>
+
+<h1>Custom Pipe</h1>
+<b>Square root of 625 is: {{625 | square}}</b>
+<!-- <input type="text" [(ngModel)]="search"> 
+*ngFor="let getValue of list | search"-->
+<h1 *ngFor="let getValue of list">{{getValue.value | square}}</h1>
+<button (click)="getValue()">Get Value</button>
